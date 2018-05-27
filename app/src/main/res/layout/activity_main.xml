@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<Button
+		android:id="@+id/button_add"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Add"
+		android:textAllCaps="false"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toLeftOf="@+id/button_show"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/button_show"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Show"
+		android:textAllCaps="false"
+		app:layout_constraintLeft_toRightOf="@+id/button_add"
+		app:layout_constraintRight_toLeftOf="@+id/button_deleteAll"
+		app:layout_constraintBaseline_toBaselineOf="@+id/button_add" />
+
+	<Button
+		android:id="@+id/button_deleteAll"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Delete All"
+		android:textAllCaps="false"
+		app:layout_constraintLeft_toRightOf="@+id/button_show"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBaseline_toBaselineOf="@+id/button_add" />
+
+	<EditText
+		android:id="@+id/editText_log"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:focusable="false"
+		android:textIsSelectable="true"
+		android:gravity="top"
+		android:textSize="12sp"
+		app:layout_constraintTop_toBottomOf="@+id/button_add"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
